@@ -82,7 +82,7 @@
         "projectName": "X2R.Insight.Janitor.Logic",
         "projectPath": "C:\\Users\\Dave - X2R\\Source\\Workspaces\\Intermediate Solutions\\Janitor\\X2R.Insight.Janitor.Logic\\X2R.Insight.Janitor.Logic.csproj",
         "packagesPath": "C:\\Users\\Dave - X2R\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dave - X2R\\source\\Workspaces\\Intermediate Solutions\\Janitor\\X2R.Insight.Janitor.Logic\\obj\\",
+        "outputPath": "C:\\Users\\Dave - X2R\\Source\\Workspaces\\Intermediate Solutions\\Janitor\\X2R.Insight.Janitor.Logic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
