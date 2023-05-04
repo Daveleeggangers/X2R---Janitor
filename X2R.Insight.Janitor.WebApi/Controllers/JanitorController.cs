@@ -4,7 +4,6 @@ using X2R.Insight.Janitor.WebApi.Dto;
 using X2R.Insight.Janitor.WebApi.interfaces;
 using X2R.Insight.Janitor.WebApi.Models;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace X2R.Insight.Janitor.WebApi.Controllers
 {
@@ -41,15 +40,20 @@ namespace X2R.Insight.Janitor.WebApi.Controllers
 
             foreach (var x in query)
             {
-                if (x.DateTime_Start == DateTime.Now || x.DateTime_Start > DateTime.Now)
+                if (x.DateTime_Start < DateTime.Now)
                 {
                     var status = _queryInterface.GetStatus(x.TaskId);
                     if (status == "Active")
                     {
                         var execute = _queryInterface.ExecuteQuery(x.Query);
-                        if (execute != 0)
+                        if (Convert.ToInt32(execute) != 0)
                         {
                             if (x.RecurringSchedule == "Once")
+                            {
+                                _queryInterface.ChangeStatus(x.TaskId);
+                                _queryInterface.ChangeDetails(x.TaskId, execute.ToString());
+                            }
+                            if (x.RecurringSchedule == "Multiple")
                             {
                                 _queryInterface.ChangeDetails(x.TaskId, execute.ToString());
                             }
@@ -62,6 +66,8 @@ namespace X2R.Insight.Janitor.WebApi.Controllers
                 return BadRequest(ModelState);
             return Ok(query);
         }
+
+        // GET: Ability to execute a since query filled in
         [HttpGet("Execute")]
         [ProducesResponseType(204)]
         [ProducesResponseType(400)]
@@ -72,8 +78,6 @@ namespace X2R.Insight.Janitor.WebApi.Controllers
             return Ok(query);
         }
 
-        [ProducesResponseType(200, Type = typeof(Querys))]
-        [ProducesResponseType(400)]
         // GET api/Janitor/5    - gets the selected id query
         [HttpGet("{id}")]
         [ProducesResponseType(200, Type = typeof(Querys))]
@@ -89,7 +93,7 @@ namespace X2R.Insight.Janitor.WebApi.Controllers
             return Ok(Query);
         }
 
-        // POST api/<JanitorController>
+        // Ability to fill in a new row in the Querys table
         [HttpPost]
         [ProducesResponseType(204)]
         [ProducesResponseType(400)]

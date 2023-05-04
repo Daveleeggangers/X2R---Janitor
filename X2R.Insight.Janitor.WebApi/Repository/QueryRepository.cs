@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
 using X2R.Insight.Janitor.WebApi.Data;
 using X2R.Insight.Janitor.WebApi.interfaces;
 using X2R.Insight.Janitor.WebApi.Models;
@@ -35,13 +34,6 @@ namespace X2R.Insight.Janitor.WebApi.Repository
             return _context.Querys.Any(p => p.TaskId == id);
         }
 
-        public int ExecuteQuery(string query)
-        {
-            var blogs = _context.Database
-                .ExecuteSql($"UPDATE Querys SET query = 'Alfred Schmidt' WHERE TaskId = 1;");
-            return blogs;
-        }
-
         public bool Save()
         {
             var saved = _context.SaveChanges();
@@ -61,12 +53,24 @@ namespace X2R.Insight.Janitor.WebApi.Repository
 
         public bool ChangeDetails(int id, string details)
         {
-            var status = _context.Database
-                .ExecuteSql($"UPDATE QueryResult SET Status = 'Inactive' WHERE ResultId = {id};");
+            details = $"{details} row(s) affected";
 
-            var _details = _context.Database
-                .ExecuteSql($"UPDATE QueryResult SET Details = '{details} Row(s) affected' WHERE ResultId = {id};");
+            _context.Database
+                .ExecuteSql($"UPDATE QueryResult SET Details = {details} WHERE ResultId = {id};");
             return true;
+        }
+        public bool ChangeStatus(int id)
+        {
+            _context.Database
+                .ExecuteSql($"UPDATE QueryResult SET Status = 'Inactive' WHERE ResultId = {id};");
+            return true;
+        }
+
+        public int ExecuteQuery(string query)
+        {
+            var blogs = _context.Database
+                .ExecuteSql($"UPDATE Querys SET query = 'Alfred Schmidt' WHERE TaskId = 2;");
+            return blogs;
         }
     }
 }
