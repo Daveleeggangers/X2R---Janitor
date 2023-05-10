@@ -1,0 +1,48 @@
+﻿@page
+@model X2R.Insight.Janitor.WebApplication.Pages.Querys.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model._Querys[0].Query)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model._Querys[0].DateTime_Start)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model._Querys[0].RecurringSchedule)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model._Querys) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Query)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateTime_Start)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecurringSchedule)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.TaskId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.TaskId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.TaskId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

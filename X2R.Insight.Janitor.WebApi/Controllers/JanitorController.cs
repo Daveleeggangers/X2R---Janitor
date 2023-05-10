@@ -22,7 +22,7 @@ namespace X2R.Insight.Janitor.WebApi.Controllers
 
         // GET: api/Janitor     - gets all querys
         [HttpGet]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<Querys>))]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<_Querys>))]
         public IActionResult GetQuerys()
         {
             var Query = _mapper.Map<List<QueryDto>>(_queryInterface.GetQuerys());
@@ -33,7 +33,7 @@ namespace X2R.Insight.Janitor.WebApi.Controllers
 
         // GET: api/Janitor     - gets all DateTimes
         [HttpGet("DateTimes")]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<Querys>))]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<_Querys>))]
         public IActionResult GetDateTimesQuery()
         {
             var query = _queryInterface.GetDateTimesQuery();
@@ -80,7 +80,7 @@ namespace X2R.Insight.Janitor.WebApi.Controllers
 
         // GET api/Janitor/5    - gets the selected id query
         [HttpGet("{id}")]
-        [ProducesResponseType(200, Type = typeof(Querys))]
+        [ProducesResponseType(200, Type = typeof(_Querys))]
         [ProducesResponseType(400)]
         public IActionResult GetQuery(int id)
         {
@@ -115,7 +115,7 @@ namespace X2R.Insight.Janitor.WebApi.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var queryMap = _mapper.Map<Querys>(queryCreate);
+            var queryMap = _mapper.Map<_Querys>(queryCreate);
 
             if (!_queryInterface.CreateQuery(queryMap))
             {

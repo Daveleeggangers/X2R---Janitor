@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "X2R.Insight.Janitor.Logic",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "X2R.Insight.Janitor.Main", "X2R.Insight.Janitor.Main\X2R.Insight.Janitor.Main.csproj", "{57E9CEBB-0761-48C3-A1A8-2097617E0B13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "X2R.Insight.Janitor.WebApi", "X2R.Insight.Janitor.WebApi\X2R.Insight.Janitor.WebApi.csproj", "{9DBFD9F4-C3B5-4B37-8989-9E278C2836AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "X2R.Insight.Janitor.WebApi", "X2R.Insight.Janitor.WebApi\X2R.Insight.Janitor.WebApi.csproj", "{9DBFD9F4-C3B5-4B37-8989-9E278C2836AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "X2R.Insight.Janitor.WebApplication", "X2R.Insight.Janitor.WebApplication\X2R.Insight.Janitor.WebApplication.csproj", "{C97722E1-7690-479C-80D0-355DE1F06327}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{9DBFD9F4-C3B5-4B37-8989-9E278C2836AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DBFD9F4-C3B5-4B37-8989-9E278C2836AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DBFD9F4-C3B5-4B37-8989-9E278C2836AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C97722E1-7690-479C-80D0-355DE1F06327}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C97722E1-7690-479C-80D0-355DE1F06327}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C97722E1-7690-479C-80D0-355DE1F06327}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C97722E1-7690-479C-80D0-355DE1F06327}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,7 +47,7 @@ Global
 		SolutionGuid = {7AD6B019-2922-4522-85BA-5FA3FE3728B1}
 	EndGlobalSection
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
+		SccNumberOfProjects = 6
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://x2rbv.visualstudio.com/
 		SccLocalPath0 = .
@@ -57,5 +63,8 @@ Global
 		SccProjectUniqueName4 = X2R.Insight.Janitor.WebApi\\X2R.Insight.Janitor.WebApi.csproj
 		SccProjectName4 = X2R.Insight.Janitor.WebApi
 		SccLocalPath4 = X2R.Insight.Janitor.WebApi
+		SccProjectUniqueName5 = X2R.Insight.Janitor.WebApplication\\X2R.Insight.Janitor.WebApplication.csproj
+		SccProjectName5 = X2R.Insight.Janitor.WebApplication
+		SccLocalPath5 = X2R.Insight.Janitor.WebApplication
 	EndGlobalSection
 EndGlobal

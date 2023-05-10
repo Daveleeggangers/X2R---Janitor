@@ -8,8 +8,8 @@ namespace X2R.Insight.Janitor.WebApi.Helper
     {
         public MappingProfiles()
         {
-            CreateMap<Querys, QueryDto>();
-            CreateMap<QueryDto, Querys>();
+            CreateMap<_Querys, QueryDto>();
+            CreateMap<QueryDto, _Querys>();
         }
     }
 }

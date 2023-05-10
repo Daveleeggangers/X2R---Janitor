@@ -9,7 +9,7 @@ namespace X2R.Insight.Janitor.WebApi.Data
         {
 
         }
-        public DbSet<Querys> Querys { get; set; }
+        public DbSet<_Querys> Querys { get; set; }
         public DbSet<QueryResult> QueryResult { get; set; }
 
 
@@ -18,7 +18,7 @@ namespace X2R.Insight.Janitor.WebApi.Data
             modelBuilder.Entity<QueryResult>()
                 .HasKey(b => b.ResultId);
 
-            modelBuilder.Entity<Querys>()
+            modelBuilder.Entity<_Querys>()
                 .HasKey(b => b.TaskId);
 
             modelBuilder.Entity<QueryResult>()

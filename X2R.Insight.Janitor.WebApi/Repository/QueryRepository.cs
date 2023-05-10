@@ -14,17 +14,17 @@ namespace X2R.Insight.Janitor.WebApi.Repository
             _context = context;
         }
 
-        public Querys GetQuery(int id)
+        public _Querys GetQuery(int id)
         {
             return _context.Querys.Where(p => p.TaskId == id).FirstOrDefault();
         }
 
-        public ICollection<Querys> GetQuerys()
+        public ICollection<_Querys> GetQuerys()
         {
             return _context.Querys.OrderBy(p => p.TaskId).ToList();
         }
 
-        public ICollection<Querys> GetDateTimesQuery()
+        public ICollection<_Querys> GetDateTimesQuery()
         {
             return _context.Querys.OrderBy(p => p.TaskId).ToList();
         }
@@ -45,7 +45,7 @@ namespace X2R.Insight.Janitor.WebApi.Repository
             return _context.QueryResult.Where(p => p.ResultId == id).Select(p => p.Status).SingleOrDefault();
         }
 
-        public bool CreateQuery(Querys query)
+        public bool CreateQuery(_Querys query)
         {
             _context.Add(query);
             return Save();

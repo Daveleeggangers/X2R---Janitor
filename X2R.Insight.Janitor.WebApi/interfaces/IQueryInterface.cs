@@ -4,11 +4,11 @@ namespace X2R.Insight.Janitor.WebApi.interfaces
 {
     public interface IQueryInterface
     {
-        ICollection<Querys> GetQuerys();
-        ICollection<Querys> GetDateTimesQuery();
-        Querys GetQuery(int id);
+        ICollection<_Querys> GetQuerys();
+        ICollection<_Querys> GetDateTimesQuery();
+        _Querys GetQuery(int id);
         bool QueryExists(int id);
-        bool CreateQuery(Querys query);
+        bool CreateQuery(_Querys query);
         bool ChangeDetails(int id, string details);
         bool ChangeStatus(int id);
         string GetStatus(int id);

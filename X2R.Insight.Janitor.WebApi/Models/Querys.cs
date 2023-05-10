@@ -1,6 +1,6 @@
 ﻿namespace X2R.Insight.Janitor.WebApi.Models
 {
-    public class Querys
+    public class _Querys
     {
         public int TaskId { get; set; }
         public string Query { get; set; }

@@ -5,7 +5,7 @@
         public int ResultId { get; set; }
         public string Status { get; set; }
         public string Details { get; set; }
-        public Querys Query { get; set; }
+        public _Querys Query { get; set; }
         public QueryResult QueryResults { get; set; }
     }
 }
