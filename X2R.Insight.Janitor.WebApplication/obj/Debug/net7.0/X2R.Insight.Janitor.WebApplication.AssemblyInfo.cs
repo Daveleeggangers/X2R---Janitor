@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("bb33c0d0-8525-4ab1-947e-b14fbfc4ff03")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("X2R.Insight.Janitor.WebApplication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

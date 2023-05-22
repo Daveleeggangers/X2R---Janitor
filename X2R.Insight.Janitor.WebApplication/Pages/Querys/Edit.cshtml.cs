@@ -43,12 +43,20 @@ namespace X2R.Insight.Janitor.WebApplication.Pages.Querys
         // For more details, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
-
             _context.Attach(_Querys).State = EntityState.Modified;
+
+            if(_Querys.RecurringSchedule == null)
+            {
+                _Querys.RecurringSchedule = Request.Form["RecurringSchedule"].ToString();
+                if(_Querys.RecurringSchedule == "1")
+                {
+                    _Querys.RecurringSchedule = "Once";
+                }
+                else
+                {
+                    _Querys.RecurringSchedule = "Multiple";
+                }
+            }
 
             try
             {

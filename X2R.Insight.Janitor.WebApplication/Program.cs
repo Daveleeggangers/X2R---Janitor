@@ -1,7 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using X2R.Insight.Janitor.WebApi.Data;
-using X2R.Insight.Janitor.WebApi.interfaces;
-using X2R.Insight.Janitor.WebApi.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 

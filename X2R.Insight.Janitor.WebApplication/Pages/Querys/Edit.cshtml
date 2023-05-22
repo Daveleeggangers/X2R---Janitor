@@ -26,8 +26,10 @@
             </div>
             <div class="form-group">
                 <label asp-for="_Querys.RecurringSchedule" class="control-label"></label>
-                <input asp-for="_Querys.RecurringSchedule" class="form-control" />
-                <span asp-validation-for="_Querys.RecurringSchedule" class="text-danger"></span>
+                <select asp-for="_Querys.RecurringSchedule" name="RecurringSchedule" class="form-control">
+                    <option value="1">Once</option>
+                    <option value="2">Multiple</option>
+                </select>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

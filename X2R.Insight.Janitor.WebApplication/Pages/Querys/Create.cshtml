@@ -25,19 +25,24 @@
             </div>
             <div class="form-group">
                 <label asp-for="_Querys.RecurringSchedule" class="control-label"></label>
-                <input asp-for="_Querys.RecurringSchedule" class="form-control" />
-                <span asp-validation-for="_Querys.RecurringSchedule" class="text-danger"></span>
+                <select asp-for="_Querys.RecurringSchedule" name="RecurringSchedule" class="form-control">
+                     <option value="1">Once</option>
+                     <option value="2">Multiple</option>
+                </select>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            <div class="btn-group mt-2">
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+                <div>
+                    <a asp-page="Index" class="ml-2 btn btn-light">Back to List</a>
+                </div>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-page="Index">Back to List</a>
-</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

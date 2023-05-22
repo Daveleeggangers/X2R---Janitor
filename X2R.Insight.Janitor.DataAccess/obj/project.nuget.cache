@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L51mxE3vH1q3tfWg8zye+i3Xmpjrk2sThjcvOEn/z7mHg2N9VOAo5TB7yIpRwMeNcZtLjQ4ffoJbrinScpEYSg==",
+  "dgSpecHash": "uIrFhM+z39l2SvYi1RTF/K5/c94ttI7SlROblpPryM8Iaak5rRXth5TA46WSyG2YbRvvf4Za1/qq6MI3ufFI0g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dave - X2R\\Source\\Workspaces\\Intermediate Solutions\\Janitor\\X2R.Insight.Janitor.DataAccess\\X2R.Insight.Janitor.DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\Dave - X2R\\Desktop\\X2R - JanitorV2\\X2R - Janitor - Main\\X2R - Janitor\\X2R.Insight.Janitor.DataAccess\\X2R.Insight.Janitor.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dave - X2R\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\Dave - X2R\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",

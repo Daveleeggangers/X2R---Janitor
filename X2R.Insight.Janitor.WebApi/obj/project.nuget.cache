@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n5FTW8+R7uBfsybAXnX2Aauzhhi1RQskZYBwf3j89/HB+D8kbAPCiVDedjbt65UBJpxIOC5aoeGoFsh9wcbFkQ==",
+  "dgSpecHash": "/OZzveBx8bSWSwAHw3qjAy8ddy0mq9D3cFHKyfF42qs7eTdm/5wNEnyZmb+bkYwQy2NDHH0bIbpiZdLjHR6rgw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dave - X2R\\Source\\Workspaces\\Intermediate Solutions\\Janitor\\X2R.Insight.Janitor.WebApi\\X2R.Insight.Janitor.WebApi.csproj",
+  "projectFilePath": "C:\\Users\\Dave - X2R\\Desktop\\X2R - JanitorV2\\X2R - Janitor - Main\\X2R - Janitor\\X2R.Insight.Janitor.WebApi\\X2R.Insight.Janitor.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dave - X2R\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Dave - X2R\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

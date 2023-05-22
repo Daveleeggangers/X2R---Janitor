@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a3D3iFoOs/6hzcg/1WYDd0nsI2ab9n/GbYQugIu3q/7gZw27sKbV8Nl6WyDTtkNNBlj5FwKLxKHKf10pNE9x2A==",
+  "dgSpecHash": "HxeGiefE9AXQdil1LZz8MXHC6/CaxbLL5vByP2qmLYOecvGp/Icwqego+BLMQmw8Qu+SSdA3GNZMCThcX0IufA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dave - X2R\\Source\\Workspaces\\Intermediate Solutions\\Janitor\\X2R.Insight.Janitor.WebApplication\\X2R.Insight.Janitor.WebApplication.csproj",
+  "projectFilePath": "C:\\Users\\Dave - X2R\\Desktop\\X2R - JanitorV2\\X2R - Janitor - Main\\X2R - Janitor\\X2R.Insight.Janitor.WebApplication\\X2R.Insight.Janitor.WebApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dave - X2R\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Dave - X2R\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -71,6 +71,7 @@
     "C:\\Users\\Dave - X2R\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
     "C:\\Users\\Dave - X2R\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Dave - X2R\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\Dave - X2R\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.2\\microsoft.visualstudio.azure.containers.tools.targets.1.17.2.nupkg.sha512",
     "C:\\Users\\Dave - X2R\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\7.0.6\\microsoft.visualstudio.web.codegeneration.7.0.6.nupkg.sha512",
     "C:\\Users\\Dave - X2R\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\7.0.6\\microsoft.visualstudio.web.codegeneration.core.7.0.6.nupkg.sha512",
     "C:\\Users\\Dave - X2R\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.design\\7.0.6\\microsoft.visualstudio.web.codegeneration.design.7.0.6.nupkg.sha512",
